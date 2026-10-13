@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-frame {
+  width: 100%;
+  max-width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  border-radius: 36px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header {
+  background-color: #1b7b43;
+  color: #ffffff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Employer Card Summary */
+.employer-card {
+  background-color: #eaf5ee;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.employer-avatar {
+  width: 52px;
+  height: 52px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.employer-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 2px;
+}
+
+.job-context {
+  font-size: 12px;
+  color: #555555;
+}
+
+.job-context strong {
+  color: #1b7b43;
+}
+
+/* Rating Section */
+.rating-section {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.star {
+  font-size: 28px;
+  color: #dcdfe6;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.star.active {
+  color: #f1c40f;
+}
+
+.rating-status-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1b7b43;
+}
+
+/* Feedback Tags */
+.tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-chip {
+  background-color: #f4f8f5;
+  color: #666666;
+  border: 1px solid #dcdfe6;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-chip.active {
+  background-color: #eaf5ee;
+  color: #1b7b43;
+  border-color: #1b7b43;
+}
+
+/* Review Textarea */
+.textarea-wrapper {
+  position: relative;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 12px;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  background-color: #ffffff;
+}
+
+.review-textarea:focus {
+  border-color: #1b7b43;
+}
+
+.char-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 10px;
+  color: #909399;
+}
+
+/* Submit Action Button */
+.submit-rating-btn {
+  background-color: #1b7b43;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+
+.submit-rating-btn:hover {
+  background-color: #135930;
+}

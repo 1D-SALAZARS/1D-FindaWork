@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Jobs - Community Work Finder</title>
+  <link rel="stylesheet" href="find-jobs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-frame">
+    <!-- Header -->
+    <header class="app-header">
+      <button class="icon-btn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      <h1 class="header-title">Find Jobs</h1>
+      <button class="icon-btn" aria-label="Filter"><i class="fa-solid fa-sliders"></i></button>
+    </header>
+
+    <main class="main-content">
+      <!-- Search Input -->
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search jobs..." class="search-input">
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="categories-scroll">
+        <button class="filter-pill active">All</button>
+        <button class="filter-pill">Cleaning</button>
+        <button class="filter-pill">Gardening</button>
+        <button class="filter-pill">Delivery</button>
+      </div>
+
+      <!-- Job List -->
+      <div class="jobs-feed">
+        <!-- Job Card 1 -->
+        <a href="job-details.html" class="job-card-link">
+          <div class="job-card">
+            <div class="card-top">
+              <div class="job-icon blue-bg"><i class="fa-solid fa-house-chimney"></i></div>
+              <div class="job-header-info">
+                <h2 class="job-title">House Cleaning</h2>
+                <p class="location-text"><i class="fa-solid fa-location-dot"></i> Barangay Maligaya</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-bottom">
+              <div class="meta-info">
+                <i class="fa-regular fa-calendar"></i> May 18, 2024 • 8:00 AM
+              </div>
+              <div class="job-price">₱300</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Job Card 2 -->
+        <a href="job-details.html" class="job-card-link">
+          <div class="job-card">
+            <div class="card-top">
+              <div class="job-icon green-bg"><i class="fa-solid fa-leaf"></i></div>
+              <div class="job-header-info">
+                <h2 class="job-title">Plant Care / Gardening</h2>
+                <p class="location-text"><i class="fa-solid fa-location-dot"></i> Barangay San Isidro</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-bottom">
+              <div class="meta-info">
+                <i class="fa-regular fa-calendar"></i> May 19, 2024 • 7:00 AM
+              </div>
+              <div class="job-price">₱350</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Job Card 3 -->
+        <a href="job-details.html" class="job-card-link">
+          <div class="job-card">
+            <div class="card-top">
+              <div class="job-icon orange-bg"><i class="fa-solid fa-truck-ramp-box"></i></div>
+              <div class="job-header-info">
+                <h2 class="job-title">Delivery Helper</h2>
+                <p class="location-text"><i class="fa-solid fa-location-dot"></i> Barangay Poblacion</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-bottom">
+              <div class="meta-info">
+                <i class="fa-regular fa-calendar"></i> May 18, 2024 • 1:00 PM
+              </div>
+              <div class="job-price">₱200</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Job Card 4 -->
+        <a href="job-details.html" class="job-card-link">
+          <div class="job-card">
+            <div class="card-top">
+              <div class="job-icon purple-bg"><i class="fa-solid fa-wrench"></i></div>
+              <div class="job-header-info">
+                <h2 class="job-title">Event Setup Helper</h2>
+                <p class="location-text"><i class="fa-solid fa-location-dot"></i> Barangay Maligaya</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-bottom">
+              <div class="meta-info">
+                <i class="fa-regular fa-calendar"></i> May 20, 2024 • 9:00 AM
+              </div>
+              <div class="job-price">₱400</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <a href="home.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="find-jobs.html" class="nav-item active">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Jobs</span>
+      </a>
+      <a href="post-job.html" class="nav-item add-btn-item">
+        <div class="add-circle"><i class="fa-solid fa-plus"></i></div>
+      </a>
+      <a href="messages.html" class="nav-item">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span>Messages</span>
+      </a>
+      <a href="profile.html" class="nav-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

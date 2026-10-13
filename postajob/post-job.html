@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job - Community Work Finder</title>
+  <link rel="stylesheet" href="post-job.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-frame">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="home.html" class="icon-btn" aria-label="Back"><i class="fa-solid fa-chevron-left"></i></a>
+      <h1 class="header-title">Post a Job</h1>
+      <div style="width: 24px;"></div>
+    </header>
+
+    <main class="main-content">
+      <form class="post-job-form" onsubmit="event.preventDefault();">
+        <!-- Job Title -->
+        <div class="form-group">
+          <label class="form-label">Job Title</label>
+          <input type="text" class="form-input" placeholder="e.g., House Cleaning">
+        </div>
+
+        <!-- Category -->
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <div class="select-wrapper">
+            <select class="form-select">
+              <option value="" disabled selected>Select Category</option>
+              <option value="cleaning">Cleaning</option>
+              <option value="gardening">Gardening</option>
+              <option value="delivery">Delivery</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-icon"></i>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="form-group">
+          <label class="form-label">Location</label>
+          <input type="text" class="form-input" placeholder="Enter location">
+        </div>
+
+        <!-- Date & Time -->
+        <div class="form-group">
+          <label class="form-label">Date & Time</label>
+          <div class="input-icon-wrapper">
+            <input type="text" class="form-input" placeholder="Select date and time">
+            <i class="fa-regular fa-calendar icon-right"></i>
+          </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="form-group">
+          <label class="form-label">Payment</label>
+          <div class="payment-group">
+            <div class="input-currency-wrapper">
+              <span class="currency-prefix">₱</span>
+              <input type="number" class="form-input currency-input" placeholder="e.g., 300">
+            </div>
+            <div class="select-wrapper rate-wrapper">
+              <select class="form-select">
+                <option value="day">/ day</option>
+                <option value="hour">/ hour</option>
+              </select>
+              <i class="fa-solid fa-chevron-down select-icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Description -->
+        <div class="form-group">
+          <label class="form-label">Job Description</label>
+          <textarea class="form-textarea" rows="4" placeholder="Describe the job details..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Post Job</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

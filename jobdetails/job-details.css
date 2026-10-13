@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-frame {
+  width: 100%;
+  max-width: 390px;
+  height: 844px;
+  background-color: #ffffff;
+  border-radius: 36px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-header {
+  background-color: #1b7b43;
+  color: #ffffff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.image-banner {
+  width: 100%;
+  height: 140px;
+  background-color: #eaf5ee;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-icon {
+  font-size: 54px;
+  color: #1b7b43;
+}
+
+.job-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #2c3e50;
+}
+
+.price-badge {
+  background-color: #eaf5ee;
+  color: #1b7b43;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.badge-sub {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+.detail-icon {
+  color: #1b7b43;
+  width: 16px;
+}
+
+.section-block {
+  margin-top: 20px;
+}
+
+.section-heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.description-text {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-list li {
+  font-size: 13px;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check-icon {
+  color: #1b7b43;
+  font-size: 14px;
+}
+
+.poster-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.poster-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.poster-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Bottom Action */
+.bottom-action-container {
+  padding: 16px 20px 24px;
+  background-color: #ffffff;
+  border-top: 1px solid #f0f0f0;
+}
+
+.apply-btn {
+  width: 100%;
+  background-color: #1b7b43;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}

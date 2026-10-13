@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Community Work Finder</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-frame">
+    <!-- Top Green Hero Banner -->
+    <header class="hero-header">
+      <div class="top-bar">
+        <button class="icon-btn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <button class="icon-btn notification-btn" aria-label="Notifications">
+          <i class="fa-solid fa-bell"></i>
+          <span class="badge"></span>
+        </button>
+      </div>
+
+      <div class="hero-content">
+        <div class="greeting">Hello! 👋</div>
+        <h1 class="app-title">Community<br>Work Finder</h1>
+        <p class="app-tagline">Find simple jobs.<br>Help your community.</p>
+        
+        <!-- Illustration Vector representation -->
+        <div class="hero-illustration">
+          <div class="character worker-female">
+            <i class="fa-solid fa-broom character-tool"></i>
+            <div class="avatar-head"></div>
+            <div class="avatar-body yellow"></div>
+          </div>
+          <div class="character worker-box">
+            <i class="fa-solid fa-box character-tool"></i>
+            <div class="avatar-head"></div>
+            <div class="avatar-body green"></div>
+          </div>
+          <div class="character worker-male">
+            <i class="fa-solid fa-wrench character-tool"></i>
+            <div class="avatar-head"></div>
+            <div class="avatar-body blue"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Search Input -->
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Search jobs..." class="search-input">
+      </div>
+
+      <!-- Popular Jobs Header -->
+      <div class="section-header">
+        <h2 class="section-title">Popular Jobs</h2>
+        <a href="find-jobs.html" class="view-all">View all</a>
+      </div>
+
+      <!-- Job List -->
+      <div class="job-list">
+        <!-- Job Card 1 -->
+        <a href="job-details.html" class="job-card-link">
+          <div class="job-card">
+            <div class="job-icon green-bg">
+              <i class="fa-solid fa-broom"></i>
+            </div>
+            <div class="job-info">
+              <h3 class="job-name">Cleaning Assistant</h3>
+              <p class="job-location"><i class="fa-solid fa-location-dot"></i> Barangay Poblacion</p>
+              <div class="job-price">₱250 <span class="rate-type">/ day</span></div>
+            </div>
+            <div class="job-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Job Card 2 -->
+        <a href="job-details.html" class="job-card-link">
+          <div class="job-card">
+            <div class="job-icon yellow-bg">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="job-info">
+              <h3 class="job-name">Garden Helper</h3>
+              <p class="job-location"><i class="fa-solid fa-location-dot"></i> Barangay Maligaya</p>
+              <div class="job-price">₱300 <span class="rate-type">/ day</span></div>
+            </div>
+            <div class="job-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <a href="home.html" class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="find-jobs.html" class="nav-item">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Jobs</span>
+      </a>
+      <a href="post-job.html" class="nav-item add-btn-item">
+        <div class="add-circle"><i class="fa-solid fa-plus"></i></div>
+      </a>
+      <a href="messages.html" class="nav-item">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span>Messages</span>
+      </a>
+      <a href="profile.html" class="nav-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

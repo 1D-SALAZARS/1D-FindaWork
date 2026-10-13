@@ -1,0 +1,299 @@
+/* STREAMING_CHUNK:Configuring custom properties and design tokens... */
+:root {
+--primary-color: #1b7b43;
+--primary-hover: #135930;
+--primary-light: #eaf3ed;
+--primary-soft: #f4f8f5;
+--text-dark: #1a1a1a;
+--text-muted: #666666;
+--border-color: #e2e8f0;
+--border-focus: #1b7b43;
+--bg-color: #f4f8f5;
+--white: #ffffff;
+--error-color: #e53e3e;
+--radius-pill: 9999px;
+--radius-card: 20px;
+--radius-input: 12px;
+--shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+--shadow-md: 0 4px 12px rgba(27, 123, 67, 0.15);
+--shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+--transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* STREAMING_CHUNK:Base styles and body resets... */
+
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+background-color: #121814;
+color: var(--text-dark);
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem;
+}
+
+/* STREAMING_CHUNK:Layout container and phone frame card... */
+.app-container {
+width: 100%;
+max-width: 440px;
+background-color: var(--bg-color);
+border-radius: var(--radius-card);
+box-shadow: var(--shadow-lg);
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+
+.signup-card {
+padding: 2rem 1.75rem;
+width: 100%;
+}
+
+/* STREAMING_CHUNK:Header and branding elements... */
+.brand-header {
+text-align: center;
+margin-bottom: 1.75rem;
+}
+
+.brand-icon-wrapper {
+width: 60px;
+height: 60px;
+background-color: var(--primary-color);
+color: var(--white);
+border-radius: 16px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+font-size: 1.75rem;
+margin-bottom: 0.75rem;
+box-shadow: var(--shadow-md);
+}
+
+.brand-title {
+font-size: 1.5rem;
+font-weight: 700;
+color: var(--text-dark);
+letter-spacing: -0.02em;
+}
+
+.brand-subtitle {
+font-size: 0.875rem;
+color: var(--text-muted);
+margin-top: 0.25rem;
+}
+
+/* STREAMING_CHUNK:Form group and input field styling... */
+.signup-form {
+display: flex;
+flex-direction: column;
+gap: 1.15rem;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 0.35rem;
+}
+
+.form-label {
+font-size: 0.75rem;
+font-weight: 600;
+color: var(--text-dark);
+margin-left: 0.25rem;
+}
+
+.input-wrapper {
+position: relative;
+display: flex;
+align-items: center;
+}
+
+.input-icon {
+position: absolute;
+left: 1rem;
+color: var(--text-muted);
+font-size: 1.1rem;
+pointer-events: none;
+}
+
+.form-input {
+width: 100%;
+padding: 0.8rem 1rem;
+padding-left: 2.75rem;
+font-size: 0.875rem;
+background-color: var(--white);
+border: 1px solid var(--border-color);
+border-radius: var(--radius-input);
+outline: none;
+transition: var(--transition);
+color: var(--text-dark);
+box-shadow: var(--shadow-sm);
+}
+
+.form-input::placeholder {
+color: #a0aec0;
+}
+
+.form-input:focus {
+border-color: var(--border-focus);
+box-shadow: 0 0 0 3px rgba(27, 123, 67, 0.15);
+}
+
+.toggle-password {
+position: absolute;
+right: 1rem;
+background: none;
+border: none;
+color: var(--text-muted);
+cursor: pointer;
+font-size: 1.1rem;
+padding: 0;
+display: flex;
+align-items: center;
+}
+
+/* STREAMING_CHUNK:Phone input field group... */
+.phone-group {
+display: flex;
+gap: 0.5rem;
+}
+
+.country-code {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 0.85rem;
+background-color: var(--white);
+border: 1px solid var(--border-color);
+border-radius: var(--radius-input);
+font-size: 0.875rem;
+font-weight: 600;
+color: var(--text-muted);
+box-shadow: var(--shadow-sm);
+}
+
+.phone-input {
+padding-left: 1rem;
+}
+
+/* STREAMING_CHUNK:Role selection grid cards... */
+.role-selection {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0.75rem;
+margin-top: 0.25rem;
+}
+
+.role-card {
+position: relative;
+border: 1.5px solid var(--border-color);
+background-color: var(--white);
+border-radius: var(--radius-input);
+padding: 0.85rem 0.75rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.4rem;
+cursor: pointer;
+transition: var(--transition);
+box-shadow: var(--shadow-sm);
+}
+
+.role-card input[type="radio"] {
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.role-icon {
+font-size: 1.35rem;
+color: var(--text-muted);
+transition: var(--transition);
+}
+
+.role-title {
+font-size: 0.8rem;
+font-weight: 600;
+color: var(--text-muted);
+transition: var(--transition);
+}
+
+.role-card:has(input:checked) {
+border-color: var(--primary-color);
+background-color: var(--primary-light);
+}
+
+.role-card:has(input:checked) .role-icon,
+.role-card:has(input:checked) .role-title {
+color: var(--primary-color);
+}
+
+/* STREAMING_CHUNK:Buttons and actions... */
+.submit-btn {
+width: 100%;
+background-color: var(--primary-color);
+color: var(--white);
+font-size: 0.95rem;
+font-weight: 600;
+padding: 0.9rem;
+border: none;
+border-radius: var(--radius-pill);
+cursor: pointer;
+box-shadow: var(--shadow-md);
+transition: var(--transition);
+margin-top: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.submit-btn:hover {
+background-color: var(--primary-hover);
+transform: translateY(-1px);
+}
+
+.submit-btn:active {
+transform: translateY(0);
+}
+
+/* STREAMING_CHUNK:Footer and alternate links... */
+.footer-text {
+text-align: center;
+font-size: 0.8rem;
+color: var(--text-muted);
+margin-top: 1.5rem;
+}
+
+.login-link {
+color: var(--primary-color);
+font-weight: 700;
+text-decoration: none;
+}
+
+.login-link:hover {
+text-decoration: underline;
+}
+
+/* STREAMING_CHUNK:Responsive adjustments... */
+@media (max-width: 480px) {
+body {
+padding: 0;
+background-color: var(--bg-color);
+}
+
+.app-container {
+max-width: 100%;
+min-height: 100vh;
+border-radius: 0;
+box-shadow: none;
+}
+}

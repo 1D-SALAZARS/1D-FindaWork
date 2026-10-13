@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Employer - Community Work Finder</title>
+  <link rel="stylesheet" href="rate-employer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-frame">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="profile.html" class="icon-btn" aria-label="Back"><i class="fa-solid fa-chevron-left"></i></a>
+      <h1 class="header-title">Rate Employer</h1>
+      <div style="width: 24px;"></div>
+    </header>
+
+    <main class="main-content">
+      <!-- Employer & Job Summary Card -->
+      <div class="employer-card">
+        <div class="employer-avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <h2 class="employer-name">Maria Santos</h2>
+        <p class="job-context">Completed Job: <strong>House Cleaning</strong></p>
+      </div>
+
+      <!-- Rating Section -->
+      <div class="rating-section">
+        <h3 class="section-title">How was your experience?</h3>
+        
+        <!-- Interactive Star Rating -->
+        <div class="star-rating-container" id="starContainer">
+          <i class="fa-solid fa-star star active" data-rating="1"></i>
+          <i class="fa-solid fa-star star active" data-rating="2"></i>
+          <i class="fa-solid fa-star star active" data-rating="3"></i>
+          <i class="fa-solid fa-star star active" data-rating="4"></i>
+          <i class="fa-solid fa-star star" data-rating="5"></i>
+        </div>
+        <p class="rating-status-text" id="ratingText">Great Experience!</p>
+      </div>
+
+      <!-- Quick Feedback Tags -->
+      <div class="feedback-tags-section">
+        <h3 class="section-title">What went well? (Optional)</h3>
+        <div class="tags-grid">
+          <button type="button" class="tag-chip active">Prompt Payment</button>
+          <button type="button" class="tag-chip active">Clear Instructions</button>
+          <button type="button" class="tag-chip">Friendly & Respectful</button>
+          <button type="button" class="tag-chip">Safe Environment</button>
+        </div>
+      </div>
+
+      <!-- Written Review Box -->
+      <div class="review-input-section">
+        <h3 class="section-title">Write a Review</h3>
+        <div class="textarea-wrapper">
+          <textarea class="review-textarea" rows="4" placeholder="Share details about your experience working with Maria..."></textarea>
+          <span class="char-counter">0 / 300</span>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" class="submit-rating-btn" onclick="alert('Rating submitted successfully! Thank you.'); window.location.href='profile.html';">
+        Submit Review
+      </button>
+    </main>
+  </div>
+
+  <!-- Optional simple interactive script for star rating effect -->
+  <script>
+    const stars = document.querySelectorAll('.star');
+    const ratingText = document.getElementById('ratingText');
+    const statusMessages = ['', 'Needs Improvement', 'Fair', 'Good', 'Great Experience!', 'Outstanding!'];
+
+    stars.forEach((star, index) => {
+      star.addEventListener('click', () => {
+        const rating = index + 1;
+        stars.forEach((s, i) => {
+          if (i < rating) {
+            s.classList.add('active');
+          } else {
+            s.classList.remove('active');
+          }
+        });
+        ratingText.textContent = statusMessages[rating];
+      });
+    });
+
+    // Tag chip toggle behavior
+    document.querySelectorAll('.tag-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        chip.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
